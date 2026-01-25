@@ -6,47 +6,47 @@
 
 // }
 
-// function funzioneSuperSemplice () {
-//     return "sono semplice";
-// }
+ function funzioneSuperSemplice () {
+    return "sono semplice";
+ }
 
-// let miaVariabile = funzioneSuperSemplice();
-// console.log(miaVariabile);
+let miaVariabile = funzioneSuperSemplice();
+ console.log(miaVariabile);
 
-// function funzioneUnPoMenoSemplice (numero) {
-//     if(numero % 2 == 0)
-//         return "pari";
-//     else
-//         return "dispari";
-// }
+ function funzioneUnPoMenoSemplice (numero) {
+     if(numero % 2 == 0)
+         return "pari";
+     else
+        return "dispari";
+ }
 
-// let numero = 20;
-// console.log(funzioneUnPoMenoSemplice(numero));
+ let numero = 20;
+ console.log(funzioneUnPoMenoSemplice(numero));
 
-// function funzioneDifficile () {
-//     let numero = Math.floor((Math.random()*50)+1);
-//     if(numero % 2 == 0)
-//         return numero + " - pari";
-//     else
-//         return numero + " - dispari"; 
-// }
+function funzioneDifficile () {
+    let numero = Math.floor((Math.random()*50)+1);
+     if(numero % 2 == 0)
+        return numero + " - pari";
+    else
+        return numero + " - dispari"; 
+ }
 
-// let pariDispari = funzioneDifficile();
-// console.log(pariDispari);
+let pariDispari = funzioneDifficile();
+ console.log(pariDispari);
 
 //ESERCIZIO 1
 //Crea una funzione "lanciaDado" che genera un numero intero compreso tra 1 e 6
 //Se il numero estratto è 6, stampa "Hai Vinto!"
 //Altrimenti stampa "Ritenta, sarai più fortunato!"
 
-// function lanciaDado () {
-//     let numero = Math.floor((Math.random()* 6)+1);
-//     if (numero == 6 )
-//         return numero + "Hai Vinto!";
-//     else return  numero + "Ritenta, sarai più fortunato!";      
-// }
-// let newStringa = lanciaDado();
-// console.log (newStringa);
+function lanciaDado () {
+    let numero = Math.floor((Math.random()* 6)+1);
+    if (numero == 6 )
+        return numero + "Hai Vinto!";
+    else return  numero + "Ritenta, sarai più fortunato!";      
+}
+let newStringa = lanciaDado();
+console.log (newStringa);
 
 //ESERCIZIO 2
 //Crea una funzione meteoSimulatore che genera un numero intero casuale tra 0 e +140
@@ -54,21 +54,20 @@
 //Se la temperatura è superiore a 100 stampa "Sto bollendo"
 // Se le temperatura è superiore a 25 stampa "Fa già molto caldo"
 
-// function meteoSimulatore() {
-//     let numero = Math.floor((Math.random()* 140)+1);
+function meteoSimulatore() {
+    let numero = Math.floor((Math.random()* 140)+1);
+         if (numero == 0 )
+         return  numero + "Sono diventato di ghiaccio";
+        
+    else if (numero > 100)
+        return numero + "Sto bollendo";
+        
+    else if (numero > 25)
+        return numero + "Fa già molto caldo";
+        
 
-//     if (numero == 0 )
-//         return  numero + "Sono diventato di ghiaccio";
-        
-//     else if (numero > 100)
-//         return numero + "Sto bollendo";
-        
-//     else if (numero > 25)
-//         return numero + "Fa già molto caldo";
-        
-
-// }
-// console.log (meteoSimulatore());
+ }
+ console.log (meteoSimulatore());
 
 
 
