@@ -497,10 +497,10 @@ if (attacare){
 
  if(difendere){
 
-    if(vitaEroe < 20%)
+    if(vitaEroe < 0,2)
         return "Difesa disperata: scudo potenziato";
 
-    else if (vitaEroe > 20%) 
+    else if (vitaEroe > 0,2) 
         return "Difesa standar";
 }
 else
