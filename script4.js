@@ -90,6 +90,68 @@ for (let i = 0; i < lanci.length; i++){
 }
 console.log("risultato finale" +testa);
 
+
+
+
+
+/*let numeriNumeri = [27, -13, 89, 2, -187, 1989];
+
+for (let i=0; i < numeriNumeri.length; i++){
+
+    if (numeriNumeri[i]> 0 && numeriNumeri[i] % 3 == 0) {
+        console.log(numeriNumeri[i]);
+    }
+}
+
+for (let i = numeriNumeri.length-1; i >= 0; i = i-2){
+    console.log(numeriNumeri[i]);
+
+}*/
+
+/*for ( let i = 1; i <= 20; i++){
+    console.log(i*3);
+}*/
+
+let parolaDo = "superCaliFragiListiCheSpiRaLiDoSO";
+parolaDo= parolaDo.toLowerCase();
+let vocali = 0;
+
+for (let i=0; i<parolaDo.length; i++){
+    if(parolaDo[i]=== "a" || parolaDo[i]=== "e" || parolaDo[i]=== "o" || parolaDo[i]=== "i" || parolaDo[i]=== "u" ){
+        vocali++;
+    }
+}
+console.log(vocali);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //Livello Base: Fondamenta degli Oggetti
 //1. Creazione Semplice Crea un oggetto film con le proprietà titolo, regista e anno. Stampa in console una frase del tipo: "Il film [titolo] è stato diretto da [regista] nel [anno]".
  const film = [
