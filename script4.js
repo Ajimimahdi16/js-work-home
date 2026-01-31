@@ -125,29 +125,102 @@ console.log(vocali);
 
 
 
+//dato questo array  calcola la somma di questi prezzi 
+const carrello = [10.50, 5.00, 25.00];
+let prezzo = 0;
+carrello.forEach( p => {
+    if(p % 5 === 0){
+    prezzo += p;
+    }
+}); 
+console.log(prezzo);
 
+const nomi = ["Marco", "Sonia", "Luca"];
+nomi.forEach(n => console.log("ciao " +  n));
 
+const numero = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
+numero.forEach(n => {console.log(n*5)});
 
+///Hai un array di temperature: const temp = [18, 25, 32, 12, 40, 28].
+//  Crea un nuovo array vuoto chiamato calde. 
+// Obiettivo: Usa il forEach per controllare ogni temperatura.
+//  Se è superiore a 30 gradi, aggiungila (.push()) all'array calde.
+const temp = [18, 25, 32, 12, 40, 28];
+const calde = [];
 
+temp.forEach( temperatura => {
+    if(temperatura > 30){
+        calde.push(temperatura);
+    }
+        
+    
 
+});
+console.log(calde);
 
+/*Obiettivo: Stampa una stringa per ogni prodotto che dica: "Il prodotto [NOME] costa [PREZZO]€". 
+Inoltre, calcola il prezzo totale di tutti i prodotti usando una variabile esterna.*/
 
+const prodotti = [
+    { nome: "Laptop", prezzo: 1000 },
+    { nome: "Mouse", prezzo: 30 },
+    { nome: "Tastiera", prezzo: 70 }
+];
 
+let prezzoTotale = 0;
 
+prodotti.forEach(prodotto => {console.log("il prodotto", prodotto.nome , "costa", prodotto.prezzo );
+    prezzoTotale += prodotto.prezzo
+    
+});
+console.log(prezzoTotale);
+    
+//Hai un array di stringhe che dovrebbero essere email: const lista = ["test@test.com", "not-an-email", "info@web.it", "ciao@mondo"].
+// Obiettivo: Usa il forEach per stampare in console solo le stringhe che contengono il simbolo @.
+//  Per quelle che non lo contengono, stampa un messaggio di errore: "Errore: [STRINGA] non è valida".
 
+const lista = ["test@test.com", "not-an-email", "info@web.it", "ciao@mondo"];
 
+lista.forEach(email =>{
+    if(email.includes("@"))
+        console.log(email);
+    else  console.log("Errore:", email, "non è valida");
+   
+});
 
+const vini = ["Barolo", "Nebbiolo", "Chianti", "Brunello"];
 
+vini.forEach((vino, i) => console.log((i+1).toString() + "° posto: " + vino)); 
 
+//Hai un array di categorie:
+//  const categorie = ["Elettronica", "Abbigliamento", "Casa"]. 
+// Crea un array vuoto chiamato slugs. Obiettivo:Per ogni categoria, trasformala in minuscolo, aggiungi 
+// il prefisso cat- e inseriscila in slugs. Risultato atteso: ["cat-elettronica", "cat-abbigliamento", "cat-casa"]
+const categorie = ["Elettronica", "Abbigliamento", "Casa"];
+let slugs = [];
+categorie.forEach (nuova => {
+    nuova ="cat -"+ nuova.toLowerCase();
+    
+    slugs += nuova
+   
+});
+ console.log(slugs);
 
-
-
-
-
-
-
-
+ //Obiettivo: Usa un forEach dentro un altro forEach (ciclo annidato) per calcolare la somma totale di tutte le vendite.
+const vendite = [
+    [10, 5, 20], // Scontrino 1 
+    [15, 30], // Scontrino 2
+    [5, 5, 5, 5] // Scontrino 3
+];
+let somme = 0;
+vendite.forEach((settimana, i) =>{
+    settimana.forEach(scontrino => {
+        somme += scontrino;
+    });
+    console.log("incasso della settimana " + (i + 1).toString() + ": " + somme);
+    somme = 0;
+});
 
 
 
