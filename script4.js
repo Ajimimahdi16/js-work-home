@@ -223,6 +223,48 @@ vendite.forEach((settimana, i) =>{
 });
 
 
+ 
+//Obiettivo: Usa il forEach per stampare il nome del prodotto solo se è disponibile (quantità > 0). 
+// Se la quantità è superiore a 10,aggiungi alla stampa la scritta: " - [OFFERTA SPECIALE]" e applica uno sconto del 20% al prezzo dell'oggetto originale.
+
+const magazzini = [
+    { prodotto: "Zaino", quantita: 5, prezzo: 40 },
+    { prodotto: "Sacca", quantita: 0, prezzo: 15 },
+    { prodotto: "Marsupio", quantita: 12, prezzo: 20 }
+];
+
+
+magazzini.forEach(pro => {
+    if (pro.quantita > 0){
+         console.log("disponibile " + pro.prodotto)
+        if(pro.quantita > 10)
+        console.log("disponibile " + pro.prodotto + " - Offerta speciale " +  (pro.prezzo * 0.8) + " euro " );
+    }
+    
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //Livello Base: Fondamenta degli Oggetti
