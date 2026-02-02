@@ -236,7 +236,7 @@ const magazzini = [
 
 magazzini.forEach(pro => {
     if (pro.quantita > 0){
-         console.log("disponibile " + pro.prodotto)
+         console.log("disponibile " + pro.prodotto);
         if(pro.quantita > 10)
         console.log("disponibile " + pro.prodotto + " - Offerta speciale " +  (pro.prezzo * 0.8) + " euro " );
     }
